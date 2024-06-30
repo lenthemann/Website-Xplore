@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Len op xplore</title>
+        <link rel="icon" type="len xplore.png" href="len xplore.png">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    </head>
+    
+    <body>
+
+      <div class="topnav">
+        <a href="index.html">Ik</a>
+        <a href="derdepagina.html">Waarom niet op een andere school</a>
+        <a href="tweedepagina.html">Waarom op Xplore</a>
+        <a href="fierdepagina.html">Waarom Website</a>
+      </div> 
+<p></p>
+
+
+
+<br>
+<br>
+<br>
+
+<div class="doosje">
+  <br>
+<h5>Hallo mijn naam is Len Gerritsen, ik ben 14 jaar oud. Ik denk dat ik sociaal ben. Al van kinds af aan maak ik met iedereen al een praatje.
+  Anderen zouden mij naast sociaal omschrijven als nieuwsgierig en wijs, al vind ik dit zelf niet altijd. Ik denk dat ik nog veel te leren heb in mijn leven.
+  Mijn vader zegt dat ik analytisch en filosofisch ben. Het klopt wel dat ik een denker ben. Ik denk veel na over van alles en nog wat. Ook de diepere onderwerpen zoals bijvoorbeeld religie of het bewustzijn denk ik graag over na. Andere eigenschappen die ik heb zijn dat ik snel ben afgeleid en dat ik oprecht ben. Ik zeg wat ik denk, ook als dat misschien niet is wat die ander graag wil horen.
+</h5>
+<br>
+</div>
+<br>
+<br>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="56483.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="896.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="6789.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="9678.jpg" style="width:100%">
+    
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+
+<style>
+
+.doosje {
+  background-color: rgb(155, 221, 111);
+  border-radius: 1000px;
+  padding: 20px;
+}
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #06351f
+  }
+  
+  
+  .topnav {
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  
+  
+  body {
+      font-family: 'Roboto Mono';font-size: 22px;
+  }
+  
+      body {
+      background-color: rgb(142, 185, 167);
+    }
+  
+  
+  
+  
+  #Hierisdeslideshow
+  
+  * {box-sizing:border-box}
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.0s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  </style>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+
+</script>
+
+
+    </body>
+    
+</html>
